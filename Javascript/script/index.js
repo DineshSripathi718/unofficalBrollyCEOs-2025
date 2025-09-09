@@ -394,27 +394,75 @@
 //write a program to square a number and check if the square number is even number or not
 // ex : 3 ^ 2 - 9 - not an even Number
 
-function isPrimeNumber(number){
-    let count = 0;
+// function isPrimeNumber(number){
+//     let count = 0;
 
-    for(let i = 1; i <= number; i ++){
-        if(number % i == 0)
-            count ++;
+//     for(let i = 1; i <= number; i ++){
+//         if(number % i == 0)
+//             count ++;
+//     }
+
+//     if(count == 2){
+//         return number+" is a prime number";
+//     }else{
+//         return number+" is not a prime number";
+//     }
+// }
+
+// console.log(isPrimeNumber(78));
+// console.log(isPrimeNumber(18));
+// console.log(isPrimeNumber(38));
+// console.log(isPrimeNumber(37));
+// console.log(isPrimeNumber(29));
+// console.log(isPrimeNumber(1));
+// console.log(isPrimeNumber(5));
+
+
+/* 
+    class : blueprint of an object
+    constructor : 
+    inheritance : child class acquiring parent class pro -> one way. extends keyword
+*/
+
+class Address{
+    city;
+    state;
+
+    constructor(city, state){
+        this.city = city;
+        this.state = state;
     }
 
-    if(count == 2){
-        return number+" is a prime number";
-    }else{
-        return number+" is not a prime number";
+    showAddress(){
+        console.log(this.city, this.state);
     }
 }
 
-console.log(isPrimeNumber(78));
-console.log(isPrimeNumber(18));
-console.log(isPrimeNumber(38));
-console.log(isPrimeNumber(37));
-console.log(isPrimeNumber(29));
-console.log(isPrimeNumber(1));
-console.log(isPrimeNumber(5));
 
+class UserDetails extends Address{
+   name = "user";
+   age = 0;
+   email = "email@email.com";
 
+   constructor(name, age, email, city, state){
+    super(city, state);
+    this.name = name;
+    this.age = age;
+    this.email = email;
+   }
+   
+   showDetails(){
+    console.log(this.name, this.age, this.email);
+   }
+}
+
+let obj1 = new UserDetails("john", 25, "john@gmail.com", "Krishna", "Andhra Pradesh");
+let obj2 = new UserDetails("tony", 30, "tony@email.com", "Banglore", "Karnataka");
+let obj3 = new UserDetails("Robin", 27, "robin@yahoo.com", "Kochi", "Kerala");
+
+console.log(obj1);
+console.log(obj2);
+console.log(obj3);
+
+obj1.showDetails();
+obj1.showAddress();

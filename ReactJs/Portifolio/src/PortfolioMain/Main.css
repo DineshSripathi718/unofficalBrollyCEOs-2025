@@ -1,0 +1,65 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 40px;
+}
+
+.hero{
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap : 20px;
+    flex-wrap: wrap;
+    padding : 10px;
+    background: url('./myImage.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color : white;
+}
+
+.hero .details,
+.hero .navigation{
+    min-width: 250px;
+    flex : 1;
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.hero a{
+    text-decoration: none;
+    color : rgb(255, 255, 255);
+    font-size: 2em;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.hero .name{
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.hero .social-media-icons{
+    display: flex;
+    gap : 20px;
+}
+
+.hero .social-media-icons a{
+    transform: rotate(20deg) translateX(10px);
+    transition : transform .3s linear;
+}
+
+.hero .social-media-icons a:hover{
+    transform: rotate(0deg) translateX(0px);
+}
+
+.services-container{
+    max-width: 80%;
+    display: flex;
+    gap : 10px;
+    align-items: start;
+    flex-wrap: wrap;
+}

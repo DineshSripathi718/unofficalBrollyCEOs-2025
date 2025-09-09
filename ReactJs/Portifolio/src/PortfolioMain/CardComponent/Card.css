@@ -1,0 +1,41 @@
+.card-container{
+    min-width: 250px;
+    flex : 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container .image-container{
+    height: 200px;
+}
+
+.card-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-container .card-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 10px;
+}
+
+.card-container .card-details p{
+    font-size: .7em;
+    margin : 5px 0px;
+}
+
+.card-container .card-details h3{
+    font-size: 1.4em;
+    margin: 0px;
+}
+
+.card-container .card-details button{
+    font-size: 1.1em;
+    padding : 5px 10px;
+    border-radius: 10px;
+    border : 1px solid black;
+    cursor: pointer;
+}
