@@ -39,3 +39,13 @@
     border : 1px solid black;
     cursor: pointer;
 }
+
+.card-container{
+    animation: zoom-in .4s ease-in-out;
+}
+
+@keyframes zoom-in {
+    from{
+        transform: scale(0);
+    }
+}

@@ -1,0 +1,60 @@
+/* Experience */
+
+.educationContainers,
+.experienceContainers{
+    padding : 10px;
+    display: flex;
+    justify-content: space-around;
+    gap : 30px;
+    align-items: start;
+}
+
+.educationContainers .education,
+.experienceContainers .experience{
+    display: flex;
+    justify-content: space-evenly;
+    padding : 10px;
+    border-radius: 20px 0px;
+}
+
+.educationContainers .expContainers,
+.experienceContainers .expContainers{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+
+.educationContainers .education .details,
+.experienceContainers .experience .details{
+    flex : 1;
+    display: flex;
+    flex-direction: column;
+    gap : 4px;
+}
+
+.educationContainers .education .description,
+.experienceContainers .experience .description{
+    flex : 2;
+}
+
+.educationContainers .expContainers .title,
+.experienceContainers .expContainers .title{
+    max-width: 95%;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.educationContainers .expContainers .company-name,
+.experienceContainers .expContainers .company-name{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.educationContainers .expContainers .timeline,
+.experienceContainers .expContainers .timeline{
+    font-size: .9em;
+}
+
+.experienceContainers{
+    background-color: rgba(224, 221, 221, 0.678);
+}
